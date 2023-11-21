@@ -21,4 +21,6 @@ Server specifications such as OS, Number of vCpu, memory, storage, region(countr
  3. Memory: 16GiB
  4. Storage: 65 GB
  5. Region: Ohio( USA )
- 6. Instance Price - 45$ monthly and RDS Price - 13$ monthly 
+ 6. Instance Price - 45$ monthly and RDS Price - 13$ monthly
+
+# *Branches
