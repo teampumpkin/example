@@ -82,3 +82,14 @@ pm2 process name or id can be used to restart pm2 process.
 # *Continuous Integration and Deployment Automatically:*
 To Automate the process of continuous integration and deployment, Jenkins is used Dashboard https://staging.teampumpkin.com/.
 Just need to login to the Jenkins Dashboard and run that specific job(BrainGym-Prod-Pipeline for production and BrainGym-Dev-Pipeline for staging ).
+Prod: https://staging.teampumpkin.com/view/BrainGymJobs/job/BrainGym-Dev-Pipeline
+Staging: https://staging.teampumpkin.com/view/BrainGymJobs/job/BrainGym-Prod-Pipeline/
+
+# *Continuous Backups:*
+Important files, folders and databases are backup every day and upload to AWS S3 Teampumpkin bucket.
+Important folder path: braingymjr/api/upload https://staging.teampumpkin.com/view/BrainGymJobs/job/BrainGym-Upload-Backup-Pipeline/
+Important file path: /etc/redis/redis.db https://staging.teampumpkin.com/view/BrainGymJobs/job/BrainGym-Redis-Backup-pipeline/
+Important MySQL database: braingymjr_db https://staging.teampumpkin.com/view/BrainGymJobs/job/BrainGym-db-Backup-Pipeline/
+Important MySQL database: ghost_db (take backup once in a week, every Friday) https://staging.teampumpkin.com/view/BrainGymJobs/job/BrainGym-BlogDB-Backup-Pipeline/
+Important folder path /root/dockerVolume (take backup once in a week, every Friday ) https://staging.teampumpkin.com/view/BrainGymJobs/job/BrainGym-BlogDirectory-Backup-pipeline/
+This process is automated using Jenkins, everyday backup of Braingym databases, files and folders start after 1am. 
