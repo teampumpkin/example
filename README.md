@@ -49,7 +49,7 @@ We have install Redis for cache storage on server.
 
 # *Deployment Steps*
 
-Setting up for first time:
+__Setting up for first time:__
 
 Make sure that the you have clone the GitHub project repo, places important file from Drive folder to exact path, all dependencies and packages are installed and docker, Redis, MySQL and Nginx are up and running.
 
