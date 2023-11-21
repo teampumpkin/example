@@ -42,7 +42,7 @@ MySQL:
 In this project we have used MySQL database service of Aws that is Relational Database Service rather than installing MySQL on server. 
 
 Nginx:
-To route the request to the requested port number we are using nginx click here for reference. Nginx 
+To route the request to the requested port number we are using nginx, Added nginx.conf to project repo. 
 Redis: 
 We have install Redis for cache storage on server.
 
