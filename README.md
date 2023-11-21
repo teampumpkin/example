@@ -1,6 +1,6 @@
 # Steps to setup the BrainGym project
 
-# Pre-requisite
+ **Pre-requisite**
 - Node Js
 - Docker
 - MySQL
