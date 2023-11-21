@@ -67,5 +67,13 @@ Commands to start application:
 Get into project dir “cd braingymjr/api” , install packages “yarn”  and start api process with pm2 “pm2 start ecosystem.config.js –env=production”
 Get into project dir “cd braingymjr/client” , install packages “yarn && yarn build”  and start api process with pm2 “pm2 start ecosystem.config.js –env=production”
 
+__Deployment Of New Changes After Project Is Set upped:__
 
+Integrate new changes:
+Get into the project home directory and do git pull to fetch latest code.
 
+Commands to start application:
+Run Database migration to update database changes. npx knex migrate:latest –env=production
+Get into project dir “cd braingymjr/api” , install packages “yarn”  and restart api process with pm2 “pm2 restart api”
+Get into project dir “cd braingymjr/client” , install packages “yarn && yarn build” or "yarn stage"(for staging)  and restart the client process with pm2 “pm2 restart client”
+pm2 process name or id can be used to restart pm2 process.
