@@ -63,3 +63,9 @@ docker run -d --name ghost -e database__client=mysql -e database__connection__ho
 Nginx:
 After placed nginx.conf from project to /etc/nginx/conf.d/nginx.conf, create ssl certificate using certbot and reload the nginx.
 
+Commands to start application:
+Get into project dir “cd braingymjr/api” , install packages “yarn”  and start api process with pm2 “pm2 start ecosystem.config.js –env=production”
+Get into project dir “cd braingymjr/client” , install packages “yarn && yarn build”  and start api process with pm2 “pm2 start ecosystem.config.js –env=production”
+
+
+
