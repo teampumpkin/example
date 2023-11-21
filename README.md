@@ -112,8 +112,7 @@ This process is automated using Jenkins, everyday backup of Braingym databases, 
 
 
 # *Continuous Monitoring:*
-Need Continuously monitor the server resource such as utilization of cpu, memory and storage, If the utilization is more then 70% need to get an alert to devops and developers for appropriate actions need to be taken before server runout of any resource. Need to Continuously monitor the status of applications and get alert if the status code is other than 200(Ok).
+Need Continuously monitor the server resource such as utilization of cpu, memory and storage, If the utilization is more then 70% need to get an alert to devops and developers and also get alert if the status code is other than 200(Ok).
 For Continuous Monitoring and Alerting we are using: Prometheus, Grafana and Alertmanager.
-https://staging.teampumpkin.com/prometheus 
-https://staging.teampumpkin.com/alertmanager 
+
 https://grafana.marvelspix.com/braingym
