@@ -77,3 +77,8 @@ Run Database migration to update database changes. npx knex migrate:latest –en
 Get into project dir “cd braingymjr/api” , install packages “yarn”  and restart api process with pm2 “pm2 restart api”
 Get into project dir “cd braingymjr/client” , install packages “yarn && yarn build” or "yarn stage"(for staging)  and restart the client process with pm2 “pm2 restart client”
 pm2 process name or id can be used to restart pm2 process.
+
+
+# *Continuous Integration and Deployment Automatically:*
+To Automate the process of continuous integration and deployment, Jenkins is used Dashboard https://staging.teampumpkin.com/.
+Just need to login to the Jenkins Dashboard and run that specific job(BrainGym-Prod-Pipeline for production and BrainGym-Dev-Pipeline for staging ).
