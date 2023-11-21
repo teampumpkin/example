@@ -27,6 +27,6 @@ Server specifications such as OS, Number of vCpu, memory, storage, region(countr
 - Staging branch name: staging
 - Production branch name: master
 
-# *Confidential file*
-Confidential file which can’t be added to GitHub repo added in this drive and the path on project file is braingymjr/client/.env (both for production and master branch)
+# *Confidential files*
+Confidential files which can’t be added to GitHub repo added in this drive and the path on project file is braingymjr/client/.env (both for production and master branch)
 .env files contains credentials of databases and secret variables/keys.(stored .env.staging for staging .env.production for production)
