@@ -89,16 +89,23 @@ Prod: https://staging.teampumpkin.com/view/BrainGymJobs/job/BrainGym-Dev-Pipelin
 Staging: https://staging.teampumpkin.com/view/BrainGymJobs/job/BrainGym-Prod-Pipeline/
 
 # *Continuous Backups:*
+
 Important files, folders and databases are backup every day and upload to AWS S3 Teampumpkin bucket.
+
 
 Important folder path: braingymjr/api/upload https://staging.teampumpkin.com/view/BrainGymJobs/job/BrainGym-Upload-Backup-Pipeline/
 
+
 Important file path: /etc/redis/redis.db https://staging.teampumpkin.com/view/BrainGymJobs/job/BrainGym-Redis-Backup-pipeline/
+
 
 Important MySQL database: braingymjr_db https://staging.teampumpkin.com/view/BrainGymJobs/job/BrainGym-db-Backup-Pipeline/
 
+
 Important MySQL database: ghost_db (take backup once in a week, every Friday) https://staging.teampumpkin.com/view/BrainGymJobs/job/BrainGym-BlogDB-Backup-Pipeline/
 
+
 Important folder path /root/dockerVolume (take backup once in a week, every Friday ) https://staging.teampumpkin.com/view/BrainGymJobs/job/BrainGym-BlogDirectory-Backup-pipeline/
+
 
 This process is automated using Jenkins, everyday backup of Braingym databases, files and folders start after 1am. 
