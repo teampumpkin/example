@@ -30,3 +30,19 @@ Server specifications such as OS, Number of vCpu, memory, storage, region(countr
 # *Confidential files*
 Confidential files which can’t be added to GitHub repo added in this drive and the path on project file is braingymjr/client/.env (both for production and master branch)
 .env files contains credentials of databases and secret variables/keys.(stored .env.staging for staging .env.production for production)
+
+# *Installation*
+Node Js: 
+Use Node Version manager to manage node installation, In this project set node js version to 16.16.0 and install dependent packages yarn and pm2.
+
+Docker:
+We are using docker to setup the Ghost(CMS) container. 
+
+MySQL:
+In this project we have used MySQL database service of Aws that is Relational Database Service rather than installing MySQL on server. 
+
+Nginx:
+To route the request to the requested port number we are using nginx click here for reference. Nginx 
+Redis: 
+We have install Redis for cache storage on server.
+
