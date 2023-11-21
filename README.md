@@ -47,3 +47,19 @@ To route the request to the requested port number we are using nginx, Added ngin
 Redis: 
 We have install Redis for cache storage on server.
 
+# *Deployment Steps*
+
+Setting up for first time:
+
+Make sure that the you have clone the GitHub project repo, places important file from Drive to exact path, all dependencies and packages are installed and docker, Redis, MySQL and Nginx are up and running.
+
+MySQL:
+Create a databases with following data and the user which is created should have all privileges to the databases, username and password need to be added to this excel sheet:
+
+Docker:
+Create a Ghost(CMS) container with this command: 
+docker run -d --name ghost -e database__client=mysql -e database__connection__host=databasebraingym.amazonaws.com -e database__connection__user=braingymjr -e database__connection__password= {password} -e database__connection__database= ghost_db -e NODE_ENV=production -e url=https://www.braingymjr.com/blog -p 127.0.0.1:4242:2368 -v /root/ghostDockerVolume:/var/lib/ghost/content ghost:alpine 
+
+Nginx:
+After adding Routes from here click here, create ssl certificate using certbot and reload the nginx. 
+
