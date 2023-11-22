@@ -16,6 +16,7 @@ Cloud provider on which website is hosted and Domain name.
     
 # *Server specifications*
 Server specifications such as OS, Number of vCpu, memory, storage, region(country) and price.
+**Production Server Specification**
  - Os: Linux
  - Vcpu: 4Vcpu
  - Memory: 16GiB
@@ -23,9 +24,17 @@ Server specifications such as OS, Number of vCpu, memory, storage, region(countr
  - Region: Ohio( USA )
  - Instance Price - 45$ monthly and RDS Price - 13$ monthly
 
+**Staging Server Specification**
+ - Os: Linux
+ - Vcpu: 2Vcpu
+ - Memory: 4GiB
+ - Storage: 30GB
+ - Region: Ohio( USA )
+ - Instance Price - 30$ monthly
+
 # *Branches*
-- Staging branch name: staging
-- Production branch name: master
+- Staging branch name: staging (If new changes pushed to the staging branch, Jenkins job of staging automatically triggered and Deploy changes to staging server)
+- Production branch name: production (If new changes pushed to the production branch, Jenkins job of production automatically triggered and Deploy changes to production server)
 
 # *Confidential files*
 Confidential files which can’t be added to GitHub repo added in this drive and the path on project file is braingymjr/client/.env (same path for production and master branch)
@@ -73,7 +82,7 @@ Integrate new changes:
 Get into the project home directory and do git pull to fetch latest code.
 
 Commands to start application:
-Run Database migration to update database changes. npx knex migrate:latest –env=production
+Run Database migration to update database changes. NODE_ENV=production npx knex migrate:latest –env=production
 Get into project dir “cd braingymjr/api” , install packages “yarn”  and restart api process with pm2 “pm2 restart api”
 Get into project dir “cd braingymjr/client” , install packages “yarn && yarn build” or "yarn stage"(for staging)  and restart the client process with pm2 “pm2 restart client”
 pm2 process name or id can be used to restart pm2 process.
