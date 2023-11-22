@@ -16,6 +16,7 @@ Cloud provider on which website is hosted and Domain name.
     
 # *Server specifications*
 Server specifications such as OS, Number of vCpu, memory, storage, region(country) and price.
+
 **Production Server Specification**
  - Os: Linux
  - Vcpu: 4Vcpu
