@@ -46,7 +46,7 @@ Node Js:
 Use Node Version manager to manage node installation, In this project set node js version to 16.16.0 and install dependent packages yarn and pm2.
 
 Docker:
-We are using docker to setup the Ghost(CMS) container. 
+We are using docker to setup the Ghost(CMS) container(To host the blogs we are using ghost).  
 
 MySQL:
 In this project we have used MySQL database service of Aws that is Relational Database Service rather than installing MySQL on server. 
@@ -83,7 +83,8 @@ Integrate new changes:
 Get into the project home directory and do git pull to fetch latest code.
 
 Commands to start application:
-Run Database migration to update database changes. NODE_ENV=production npx knex migrate:latest –env=production
+Run Database migration command to update database changes on production. NODE_ENV=production npx knex migrate:latest –env=production
+Run Database migration command to update database changes on staging. NODE_ENV=staging npx knex migrate:latest –env=staging
 Get into project dir “cd braingymjr/api” , install packages “yarn”  and restart api process with pm2 “pm2 restart api”
 Get into project dir “cd braingymjr/client” , install packages “yarn && yarn build” or "yarn stage"(for staging)  and restart the client process with pm2 “pm2 restart client”
 pm2 process name or id can be used to restart pm2 process.
