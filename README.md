@@ -99,6 +99,16 @@ Prod: https://staging.teampumpkin.com/view/BrainGymJobs/job/BrainGym-Dev-Pipelin
 
 Staging: https://staging.teampumpkin.com/view/BrainGymJobs/job/BrainGym-Prod-Pipeline/
 
+# *Mobile Apps Developments:*
+
+For continuous deployment of mobile apps we are using app center:
+
+we have two projects, ios and andriod and having two env for each project staging and production.
+
+https://appcenter.ms/users/BraingymJr/apps/BraingymJr
+
+https://appcenter.ms/users/BraingymJr/apps/Braingymjr-iOS
+
 # *Continuous Backups:*
 
 Important files, folders and databases are backup every day and upload to AWS S3 Teampumpkin bucket.
